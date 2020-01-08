@@ -74,4 +74,6 @@ func consumer() {
 		fmt.Println(data)
 		_ = consumer.Commit()
 	}
+
+	_ = consumer.Close()
 }
